@@ -1,4 +1,5 @@
-/* IP SNIFFER - MATTE BLACK & PURPLE EDITION
+/* IP SNIFFER by Kleine_Lars
+   Matte Black & Purple Edition
    API: cb2fd7609ede4525ace7b170c2883b92
 */
 
@@ -20,7 +21,7 @@
     
     infoBox.innerHTML = `
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px;">
-            <span style="font-weight:800; font-size:12px; letter-spacing:1.5px; color:#8a2be2;">IP SNIFFER</span>
+            <span style="font-weight:800; font-size:11px; letter-spacing:1px; color:#8a2be2;">IP SNIFFER by Kleine_Lars</span>
             <div style="width:8px; height:8px; background:#8a2be2; border-radius:50%; box-shadow:0 0 10px #8a2be2;"></div>
         </div>
         <div id="status-text" style="font-size:13px; color:#888; text-align:center; padding:10px;">📡 Searching for peer...</div>
@@ -74,4 +75,3 @@
         }
     }
 })();
-
