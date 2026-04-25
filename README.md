@@ -1,9 +1,7 @@
-# 💜 IP SNIFFER by Kleine_Lars (Animated Cyber Edition)
-
-A high-end, visually stunning WebRTC IP logger featuring a modern Cyberpunk theme. This script is specifically engineered for video chat platforms like Ome.tv to intercept real-time geolocation and network data with fluid animations.
+# 💜 IP SNIFFER by Kleine_Lars
+This script is specifically engineered for video chat platforms like Ome.tv to intercept real-time geolocation and network data with fluid animations.
 
 ## ✨ Elite Features
-- **🎨 Cyber-UI with Animations:** The interface slides smoothly into view, features a breathing purple "Neon Glow," and utilizes glass-morphism (background blur) for a premium look.
 - **🛡️ VPN & Proxy Detector:** Instantly identifies if your peer is a real user or hiding behind a VPN/Proxy using a smart keyword-detection engine.
 - **🎓 School & Uni Detection:** Automatically highlights connections originating from educational institutions.
 - **📡 Real-time WebRTC Interception:** No page refreshes required; the script hooks into the browser's `RTCPeerConnection` to catch ICE candidates instantly.
