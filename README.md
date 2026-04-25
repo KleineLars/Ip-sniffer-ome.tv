@@ -1,38 +1,39 @@
-# 💜 IP SNIFFER by Kleine_Lars
+# 💜 IP SNIFFER by Kleine_Lars (Animated Cyber Edition)
 
-A premium, matte-black WebRTC IP logger with deep purple accents. This script is specifically designed to intercept and display real-time geolocation data from peer-to-peer connections.
+Een high-end, visueel verbluffende WebRTC IP-logger met een modern Cyberpunk-thema. Dit script is speciaal ontworpen voor videochat-platforms zoals Ome.tv om real-time geolocatie en netwerkdata te onderscheppen met vloeiende animaties.
 
-## ✨ Features
-- **Branded UI:** Sleek "IP SNIFFER by Kleine_Lars" interface.
-- **Real-time Data:** Instantly displays IP, Country (with flag), City, and ISP.
-- **🎓 School Detection:** Automatically scans and highlights if a peer is connected via a school, college, or university network.
-- **Quick Access:** Direct "View Location" button linking to Google Maps based on coordinates.
-- **Modern Aesthetic:** Matte Black background with Blue Violet glow and glass-morphism effects.
+## ✨ Elite Features
+- **🎨 Cyber-UI met Animaties:** De interface schuift soepel naar binnen, heeft een ademende paarse "Neon Glow" en maakt gebruik van glass-morphism (blur-effect).
+- **🛡️ VPN & Proxy Detector:** Herkent direct of je peer een echte gebruiker is of een VPN/Proxy gebruikt via een slimme keyword-engine.
+- **🎓 School & Uni Detection:** Markeert automatisch verbindingen die afkomstig zijn van onderwijsinstellingen.
+- **📡 Real-time WebRTC Interceptie:** Geen verversingen nodig; het script vangt ICE-candidates direct uit de peer-verbinding.
+- **📍 One-Click Locate:** Directe koppeling naar Google Maps op basis van de meest nauwkeurige coördinaten.
+- **🕒 Session Memory:** Onthoudt recente logs in een gestileerde geschiedenislijst onderaan de UI.
 
-## 🚀 How to Use
+## 🚀 Hoe te Gebruiken
 
-### Desktop (Chrome / Edge / Brave / Opera)
-1. Open your preferred video chat site (e.g., Ome.tv).
-2. Press `F12` (or `Ctrl+Shift+I`) to open **Developer Tools**.
-3. Navigate to the **Console** tab.
-4. Paste the entire script and press **Enter**.
-5. The purple interface will appear. Data will load automatically when a connection is made.
+### 💻 Desktop (Chrome / Edge / Brave / Opera)
+1. Open je favoriete videochat-site (bijv. Ome.tv).
+2. Druk op `F12` of `Ctrl+Shift+I` om de **Developer Tools** te openen.
+3. Ga naar het tabblad **Console**.
+4. Plak het volledige script en druk op **Enter**.
+5. De paarse box verschijnt rechtsboven; zodra er een match is, laden de data automatisch met een animatie.
 
-### Mobile (Android - Kiwi Browser)
-1. Download **Kiwi Browser** from the Play Store (required for console support).
-2. Open the video chat site.
-3. Tap the three dots (Menu) -> **Developer Tools** -> **Console**.
-4. Paste the script and hit the enter key on your keyboard.
+### 📱 Mobiel (Android - Kiwi Browser)
+1. Download **Kiwi Browser** (deze ondersteunt de console op mobiel).
+2. Ga naar de site en tik op de drie puntjes -> **Developer Tools** -> **Console**.
+3. Plak het script in de console en druk op verzenden.
 
-## ⚙️ Technical Details
-- **Engine:** Automated WebRTC ICE candidate interception logic.
-- **API Key:** Pre-configured with `cb2fd7609ede4525ace7b170c2883b92`.
-- **Detection Logic:** Scans ISP metadata for educational keywords (School, Uni, Academy, etc.).
+## ⚙️ Technische Details
+- **Engine:** WebRTC `RTCPeerConnection` Hooking.
+- **Styling:** CSS3 Keyframe Animations & Backdrop Filters.
+- **API:** Maakt gebruik van de IPGeolocation API (`cb2fd7609ede4525ace7b170c2883b92`).
 
 ## ⚠️ Disclaimer
-- **Educational Use Only:** This tool is for learning about network protocols and WebRTC.
-- **Accuracy:** Geolocation points to the ISP's exchange hub, not a precise house address.
-- **VPNs:** If the user is on a VPN, the sniffer will display the VPN server's location.
+- Gebruik dit script uitsluitend voor **educatieve doeleinden**.
+- De nauwkeurigheid van de locatie is afhankelijk van de ISP-database (meestal de stad of de wijk, geen exact huisnummer).
+- VPN-gebruikers tonen de locatie van de server, niet hun eigen huis.
 
 ---
-**Developed by Kleine_Lars**
+**Ontwikkeld door Kleine_Lars**
+*Stay Stealthy. Stay Purple.* 🤘
