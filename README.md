@@ -3,7 +3,6 @@
 Een high-end, visueel verbluffende WebRTC IP-logger met een modern Cyberpunk-thema. Dit script is speciaal ontworpen voor videochat-platforms zoals Ome.tv om real-time geolocatie en netwerkdata te onderscheppen met vloeiende animaties.
 
 ## ✨ Elite Features
-- **🎨 Cyber-UI met Animaties:** De interface schuift soepel naar binnen, heeft een ademende paarse "Neon Glow" en maakt gebruik van glass-morphism (blur-effect).
 - **🛡️ VPN & Proxy Detector:** Herkent direct of je peer een echte gebruiker is of een VPN/Proxy gebruikt via een slimme keyword-engine.
 - **🎓 School & Uni Detection:** Markeert automatisch verbindingen die afkomstig zijn van onderwijsinstellingen.
 - **📡 Real-time WebRTC Interceptie:** Geen verversingen nodig; het script vangt ICE-candidates direct uit de peer-verbinding.
