@@ -36,4 +36,3 @@ A high-end, visually stunning WebRTC IP logger featuring a modern Cyberpunk them
 
 ---
 **Developed by Kleine_Lars**
-*Stay Stealthy. Stay Purple.* 🤘
