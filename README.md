@@ -1,4 +1,4 @@
-# 💜 IP SNIFFER by Kleine_Lars
+# IP SNIFFER by Kleine_Lars
 This script is specifically engineered for video chat platforms like Ome.tv to intercept real-time geolocation and network data with fluid animations.
 
 ## ✨ Elite Features
