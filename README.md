@@ -16,7 +16,7 @@ A lightweight, real-time WebRTC IP Sniffer overlay for the browser. It intercept
 
 An API key from ipgeolocation.io is required to fetch IP metadata.
 
-1. Create a free account at ipgeolocation.io.
+1. Create a free account at https://ipgeolocation.io
 2. Copy your API key from the dashboard.
 3. Paste the key into the input field inside the UI overlay when prompted on first run.
 
