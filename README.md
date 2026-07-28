@@ -1,38 +1,43 @@
-# IP SNIFFER by Kleine_Lars
-This script is specifically engineered for video chat platforms like Ome.tv to intercept real-time geolocation and network data with fluid animations.
+# 🛰️ IP Sniffer — Dynamic Sus Edition
 
-## Elite Features
-- **Dynamic Sus-Theme:** The UI color shifts based on connection safety. It turns Green for residential users, Orange for mobile data, and Red for VPNs or Proxies.
-- **One-Tap Copy:** Clicking the IP display area instantly copies the address to the clipboard with a visual confirmation.
-- **VPN & Proxy Detector:** Instantly identifies if your peer is a real user or hiding behind a VPN/Proxy using a smart keyword-detection engine.
-- **School & Uni Detection:** Automatically highlights connections originating from educational institutions.
-- **Real-time WebRTC Interception:** No page refreshes required; the script hooks into the browser's RTCPeerConnection to catch ICE candidates instantly.
-- **One-Click Locate:** Integrated direct link to Google Maps based on high-precision coordinates.
-- **Session History:** Keeps track of recent logs in a stylized history list at the bottom of the UI.
-
-## How to Use
-
-### Desktop (Chrome / Edge / Brave / Opera)
-1. Open your preferred video chat site (e.g., Ome.tv).
-2. Press F12 or Ctrl+Shift+I to open Developer Tools.
-3. Navigate to the Console tab.
-4. Paste the entire script and hit Enter.
-5. The UI will slide in from the right; once a match is made, the theme will shift color based on the peer's connection type.
-
-### Mobile (Android - Kiwi Browser)
-1. Download Kiwi Browser from the Play Store (it supports developer consoles on mobile).
-2. Navigate to the chat site, tap the three dots (Menu) -> Developer Tools -> Console.
-3. Paste the script and hit send/enter.
-
-## Technical Details
-- **Engine:** WebRTC RTCPeerConnection Hooking.
-- **Styling:** CSS3 Keyframe Animations & Backdrop Filters.
-- **API:** Powered by IPGeolocation API (cb2fd7609ede4525ace7b170c2883b92).
-
-## Disclaimer
-- Use this script for educational purposes only.
-- Location accuracy depends on the ISP's database (usually pinpointing the city or district, not a specific house number).
-- VPN users will display the location of the server, not their physical home.
+A lightweight, real-time **WebRTC IP Sniffer** overlay for the browser. It intercepts IP addresses via WebRTC `srflx` ICE candidates, retrieves location and ISP data through the ipgeolocation.io API, and displays the results inside a custom UI overlay.
 
 ---
-**Developed by Kleine_Lars**
+
+## Features
+
+* **In-App Key Setup:** Input your API key directly within the overlay window without using browser `prompt()` popups.
+* **Persistent Storage:** Saves the API key to `localStorage` so it persists across sessions.
+* **Dynamic Network Detection:** Analyzes network types and adjusts UI highlights accordingly:
+  * **Residential:** Standard home ISPs.
+  * **Mobile Data:** Cellular networks (4G/5G/LTE).
+  * **VPN / Proxy / Cloud:** Datacenters, hosting providers, or known proxy/VPN services.
+* **Auto-Copy IP:** Click the displayed IP address to copy it to the clipboard.
+* **Location Link:** Direct link to Google Maps using the coordinates provided by the API.
+
+---
+
+## Prerequisites & API Key
+
+An API key from [ipgeolocation.io](https://ipgeolocation.io/) is required to fetch IP metadata.
+
+1. Create a free account at [ipgeolocation.io](https://ipgeolocation.io/).
+2. Copy your API key from the dashboard.
+3. Paste the key into the input field inside the UI overlay when prompted on first run.
+
+---
+
+## Installation & Usage
+
+### Method 1: Browser Console
+1. Open any web page.
+2. Open Developer Tools (`F12` or `Ctrl+Shift+I` / `Cmd+Option+I`).
+3. Navigate to the **Console** tab.
+4. Paste the JavaScript code and press `Enter`.
+
+### Method 2: Bookmarklet
+1. Create a new browser bookmark.
+2. Set the name to `IP Sniffer`.
+3. Set the URL to:
+   ```javascript
+   javascript:(function(){/* Paste script code here */})();
