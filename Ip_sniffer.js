@@ -24,7 +24,7 @@
     // 2. Hoofdmenu aan de rechterkant
     const infoBox = document.createElement('div');
     infoBox.id = "ip-sniffer-ui-lite";
-    infoBox.style = `
+    infoBox.style.cssText = `
         position: fixed; top: 20px; right: 20px; z-index: 2147483647;
         background: #121212; color: #e0e0e0; padding: 16px; 
         border-radius: 12px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; width: 260px;
@@ -50,7 +50,7 @@
 
         const promoBox = document.createElement('div');
         promoBox.id = "ip-sniffer-promo";
-        promoBox.style = `
+        promoBox.style.cssText = `
             position: fixed; top: 20px; left: 20px; z-index: 2147483647;
             background: #121212; color: #e0e0e0; padding: 16px; 
             border-radius: 12px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; width: 260px;
@@ -99,9 +99,12 @@
     function renderIpUI(ip) {
         if (!ip) return;
 
-        document.getElementById('status-dot').style.background = "#4caf50";
+        const statusDot = document.getElementById('status-dot');
+        if (statusDot) statusDot.style.background = "#4caf50";
 
         const statusContainer = document.getElementById('status-text');
+        if (!statusContainer) return;
+
         statusContainer.innerHTML = `
             <div style="animation: fadeIn 0.3s ease forwards;">
                 <div style="background:#181818; padding:10px; border-radius:6px; border:1px solid #282828; text-align:left; cursor:pointer;" id="copy-trigger">
@@ -111,16 +114,21 @@
             </div>
         `;
 
-        document.getElementById('copy-trigger').onclick = function() {
-            navigator.clipboard.writeText(ip);
-            const val = document.getElementById('ip-val');
-            const oldIp = val.innerHTML;
-            val.innerHTML = "Copied to clipboard";
-            val.style.color = "#4caf50";
-            setTimeout(() => { 
-                val.innerHTML = oldIp; 
-                val.style.color = "#fff"; 
-            }, 1000);
-        };
+        const copyTrigger = document.getElementById('copy-trigger');
+        if (copyTrigger) {
+            copyTrigger.onclick = function() {
+                navigator.clipboard.writeText(ip);
+                const val = document.getElementById('ip-val');
+                if (val) {
+                    const oldIp = val.innerHTML;
+                    val.innerHTML = "Copied to clipboard";
+                    val.style.color = "#4caf50";
+                    setTimeout(() => { 
+                        val.innerHTML = oldIp; 
+                        val.style.color = "#fff"; 
+                    }, 1000);
+                }
+            };
+        }
     }
 })();
